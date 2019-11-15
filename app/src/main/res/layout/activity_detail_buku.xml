@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailBukuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorbackground">
+
+                <ImageView
+                    android:id="@+id/dtimg_buku"
+                    android:layout_width="120dp"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/dtjudul"
+                    android:textSize="20dp"
+                    android:text="Judulnye"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
+                <!--android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:text="By"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"/>
+                    <!--android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"-->
+
+                    <TextView
+                        android:id="@+id/dtauthor"
+                        android:textSize="15dp"
+                        android:text="Author"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <!--android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"-->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dtseries"
+                    android:textSize="15dp"
+                    android:text="series"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"-->
+
+                <Button
+                    android:id="@+id/btn_read"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Read"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_shape"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Details :"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="ISBN"
+                    style="@style/Textlain.field"/>
+
+                <TextView
+                    android:text="xxxx"
+                    style="@style/Textlain.value"
+                    android:id="@+id/isbn"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Publish Date"
+                    style="@style/Textlain.field"/>
+
+                <TextView
+                    android:text="xxxx"
+                    style="@style/Textlain.value"
+                    android:id="@+id/penerbit"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Publisher"
+                    style="@style/Textlain.field"/>
+
+                <TextView
+                    android:text="xxxx"
+                    style="@style/Textlain.value"
+                    android:id="@+id/tgl_terbit"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Synopsis :"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sinopsis"
+                android:text="Isi dari sinopsisnya"
+                android:textSize="15dp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>
